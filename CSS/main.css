@@ -1,0 +1,107 @@
+	html,body{
+			font-family: "Trebuchet MS", Helvetica, sans-serif;
+			min-width: 260px;
+			text-align: center;
+			color: #333;
+			margin: 1.5% 0.5%;
+		}
+		#main{
+			display: grid;
+			grid-template-rows: auto auto auto;
+			grid-gaps: 10px;
+			grid-areas:
+			"header"
+			"main"
+			"footer";
+			background-color: #EEE;
+			border-radius: 5px;
+			
+		}
+		header{
+			grid-area: "header";
+			grid-gap: 20%;
+		}
+		header >h2{
+			font-weight: normal;
+			font-size: 1em;
+		}
+		#image{
+			max-width: 100%;
+			display: block;
+			height: auto;
+			margin: auto;
+		}
+		#image:hover{
+			max-width: 90%;
+			display: block;
+			height: auto;
+			margin: auto;
+		}
+		#img-div{
+			/*margin-top: 5% ;*/
+			width: 97%;
+			margin: 3% auto -2% auto;
+			border: 5px solid #fff;
+			background-color: #fff;	
+		}
+		#img-div > p{
+			text-align: center;
+		}
+		main{
+			grid-area: "main";
+			width: 60%;
+			margin: auto;
+			text-align: left;
+			margin-top: 3%;
+		}
+		#life{
+			font-weight: bold;
+			font-size: 1.2em;
+			margin-left: 7%;
+		}
+		.lifetime{
+			font-weight: bold;
+		}
+		li{
+			margin-bottom: 1.7%;
+		}
+		li:hover{
+			font-size: 1.3em;
+			margin-bottom: 2%;
+			color: #3B6F95; /*7F182B, C79F71 */
+		}
+		footer{
+			grid-area: "footer";
+		}
+		h1{
+			display: flex;
+			font-family: "Trebuchet MS", Helvetica, sans-serif;
+			color: #000;
+			justify-content: center;
+		}
+		#quote{
+			width: 150%;
+			margin-left: -20%;
+			text-align: left;
+			font-style: italic;
+		}
+		blockquote:hover{
+			color: #529BB5;
+			font-size: 1.5em;
+		}
+
+		#ipm{
+			margin-left: 30%;
+			font-style: italic;
+		}
+		#ipm:hover{
+			color: #529BB5;
+			font-size: 1.5em;
+			margin-left: 20%;
+		}
+		#readmore{
+			font-style: normal;
+			font-weight: bold;
+			font-size: large;
+
+		}
